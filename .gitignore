@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Builds
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Env (keep secrets out of git)
+.env
+.env.*
+backend/.env
+frontend/.env
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/

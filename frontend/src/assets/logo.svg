@@ -1,0 +1,12 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="217" height="46" viewBox="0 0 217 46" fill="none">
+  <!-- Icon -->
+  <g>
+    <path d="M14 0C6.268 0 0 6.268 0 14V32C0 39.732 6.268 46 14 46H32C39.732 46 46 39.732 46 32V14C46 6.268 39.732 0 32 0H14Z" fill="#4F6EF7"/>
+    <path d="M23 14C23 12.3431 24.3431 11 26 11C27.6569 11 29 12.3431 29 14V32C29 33.6569 27.6569 35 26 35C24.3431 35 23 33.6569 23 32V14Z" fill="white"/>
+    <path d="M14 23C12.3431 23 11 24.3431 11 26C11 27.6569 12.3431 29 14 29H32C33.6569 29 35 27.6569 35 26C35 24.3431 33.6569 23 32 23H14Z" fill="white"/>
+    <circle cx="39" cy="7" r="2" fill="#4F6EF7"/>
+  </g>
+  <!-- Text -->
+  <text x="58" y="31" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#0D1B86">PrescripWell</text>
+</svg>
