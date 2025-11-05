@@ -1,45 +1,79 @@
-import React from 'react'
-import { assets } from '../assets/assets'
+import React from 'react';
+import { assets } from '../assets/assets';
 
 const About = () => {
   return (
-    <div>
-
-      <div className='text-center text-2xl pt-10 text-[#707070]'>
-        <p>ABOUT <span className='text-gray-700 font-semibold'>US</span></p>
+    <div className="text-gray-700">
+      {/* Header */}
+      <div className="text-center text-3xl pt-10 mb-10">
+        <p>
+          ABOUT <span className="text-[#4A6CF7] font-semibold">US</span>
+        </p>
+        <p className="text-gray-500 text-sm mt-2">
+          Discover how PrescripWell simplifies healthcare by connecting patients and doctors with ease and trust.
+        </p>
       </div>
 
-      <div className='my-10 flex flex-col md:flex-row gap-12'>
-        <img className='w-full md:max-w-[360px]' src={assets.about_image} alt="" />
-        <div className='flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600'>
-          <p>Welcome to PrescripWell, your trusted partner in managing your healthcare needs conveniently and efficiently. At PrescripWell, we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.</p>
-          <p>PrescripWell is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, PrescripWell is here to support you every step of the way.</p>
-          <b className='text-gray-800'>Our Vision</b>
-          <p>Our vision at PrescripWell is to create a seamless healthcare experience for every user. We aim to bridge the gap between patients and healthcare providers, making it easier for you to access the care you need, when you need it.</p>
+      {/* Main Content */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-6 md:px-20 py-12 bg-gray-50 rounded-lg">
+        <img
+          className="w-full md:max-w-[400px] rounded-lg shadow-md"
+          src={assets.about_image}
+          alt="About PrescripWell"
+        />
+        <div className="flex flex-col gap-6 md:w-3/5 text-[17px] leading-relaxed text-gray-600">
+          <p>
+            Welcome to <span className="font-semibold text-[#4A6CF7]">PrescripWell</span>, your trusted partner in
+            managing healthcare needs conveniently and efficiently. We understand how challenging it can be to schedule
+            doctor appointments and manage health records — our platform ensures a seamless experience for every user.
+          </p>
+          <p>
+            At PrescripWell, we are driven by a commitment to excellence and innovation. We continuously improve our
+            platform with the latest healthcare technologies to offer a user-friendly, secure, and reliable experience
+            — whether you’re booking your first appointment or managing long-term care.
+          </p>
+          <h2 className="text-2xl font-semibold text-[#4A6CF7] mt-2">Our Vision</h2>
+          <p>
+            Our vision is to make healthcare accessible, transparent, and effortless. We aim to bridge the gap between
+            patients and healthcare providers, helping you get the right care at the right time.
+          </p>
         </div>
       </div>
 
-      <div className='text-xl my-4'>
-        <p>WHY  <span className='text-gray-700 font-semibold'>CHOOSE US</span></p>
+      {/* Why Choose Us Section */}
+      <div className="text-center mt-20 mb-10">
+        <h2 className="text-3xl font-semibold text-gray-700">
+          Why <span className="text-[#4A6CF7]">Choose Us</span>
+        </h2>
+        <p className="text-gray-500 text-base mt-3 max-w-2xl mx-auto">
+          We simplify the healthcare journey by making it faster, smarter, and more personal for every patient.
+        </p>
       </div>
 
-      <div className='flex flex-col md:flex-row mb-20'>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
-          <b>EFFICIENCY:</b>
-          <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20 mb-20">
+        <div className="border rounded-xl shadow-sm p-8 hover:bg-[#4A6CF7] hover:text-white transition-all duration-300 cursor-pointer">
+          <h3 className="text-xl font-semibold mb-3">Efficiency</h3>
+          <p className="text-[16px] leading-relaxed">
+            Streamlined appointment scheduling that fits perfectly into your busy lifestyle.
+          </p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
-          <b>CONVENIENCE: </b>
-          <p>Access to a network of trusted healthcare professionals in your area.</p>
+
+        <div className="border rounded-xl shadow-sm p-8 hover:bg-[#4A6CF7] hover:text-white transition-all duration-300 cursor-pointer">
+          <h3 className="text-xl font-semibold mb-3">Convenience</h3>
+          <p className="text-[16px] leading-relaxed">
+            Access to a verified network of healthcare professionals right in your area.
+          </p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer'>
-          <b>PERSONALIZATION:</b>
-          <p >Tailored recommendations and reminders to help you stay on top of your health.</p>
+
+        <div className="border rounded-xl shadow-sm p-8 hover:bg-[#4A6CF7] hover:text-white transition-all duration-300 cursor-pointer">
+          <h3 className="text-xl font-semibold mb-3">Personalization</h3>
+          <p className="text-[16px] leading-relaxed">
+            Tailored recommendations and health reminders to help you stay proactive about your well-being.
+          </p>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
