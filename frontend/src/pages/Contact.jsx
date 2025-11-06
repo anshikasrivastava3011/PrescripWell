@@ -43,7 +43,6 @@ const Contact = () => {
 
   return (
     <div className="text-gray-700">
-      {/* Header */}
       <div className="text-center text-3xl pt-10 mb-10">
         <p>
           CONTACT <span className="text-[#4A6CF7] font-semibold">US</span>
@@ -53,18 +52,14 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Main content */}
       <div className="my-10 flex flex-col justify-center md:flex-row gap-14 mb-28 text-sm items-center">
-        {/* Image */}
         <img
           className="w-full md:max-w-[380px] rounded-lg shadow-md"
           src={assets.contact_image}
           alt="Contact PrescripWell"
         />
 
-        {/* Office and Form */}
         <div className="flex flex-col justify-center items-start gap-6 w-full md:w-[60%]">
-          {/* Office Info */}
           <div>
             <p className="font-semibold text-lg text-gray-700 mb-2">OUR OFFICE</p>
             <p className="text-gray-500 leading-6">
@@ -78,7 +73,6 @@ const Contact = () => {
 
           <hr className="w-full border-gray-300 my-4" />
 
-          {/* Contact Form */}
           <div className="w-full">
             <p className="font-semibold text-lg text-gray-700 mb-3">SEND US A MESSAGE</p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -123,7 +117,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Bottom Note */}
       <div className="text-center text-gray-500 text-sm mb-10">
         <p>
           We typically respond within 24 hours. Thank you for connecting with{' '}

@@ -12,7 +12,6 @@ const MyProfile = () => {
 
     const { token, backendUrl, userData, setUserData, loadUserProfileData } = useContext(AppContext)
 
-    // Function to update user profile data using API
     const updateUserProfileData = async () => {
 
         try {

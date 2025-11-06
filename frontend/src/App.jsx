@@ -21,7 +21,7 @@ const App = () => {
     <div className='mx-4 sm:mx-[10%]'>
       <ToastContainer />
       <Navbar />
-      <ScrollToTop /> {/* 👈 Automatically scrolls up when route changes */}
+      <ScrollToTop /> 
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/doctors' element={<Doctors />} />

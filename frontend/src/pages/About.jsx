@@ -4,7 +4,6 @@ import { assets } from '../assets/assets';
 const About = () => {
   return (
     <div className="text-gray-700">
-      {/* Header */}
       <div className="text-center text-3xl pt-10 mb-10">
         <p>
           ABOUT <span className="text-[#4A6CF7] font-semibold">US</span>
@@ -14,7 +13,6 @@ const About = () => {
         </p>
       </div>
 
-      {/* Main Content */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 px-6 md:px-20 py-12 bg-gray-50 rounded-lg">
         <img
           className="w-full md:max-w-[400px] rounded-lg shadow-md"
@@ -40,7 +38,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
       <div className="text-center mt-20 mb-10">
         <h2 className="text-3xl font-semibold text-gray-700">
           Why <span className="text-[#4A6CF7]">Choose Us</span>

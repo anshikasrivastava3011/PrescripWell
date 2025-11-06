@@ -13,7 +13,6 @@ const AppContextProvider = (props) => {
     const [token, setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token') : '')
     const [userData, setUserData] = useState(false)
 
-    // Getting Doctors using API
     const getDoctosData = async () => {
 
         try {
@@ -32,7 +31,6 @@ const AppContextProvider = (props) => {
 
     }
 
-    // Getting User Profile using API
     const loadUserProfileData = async () => {
 
         try {

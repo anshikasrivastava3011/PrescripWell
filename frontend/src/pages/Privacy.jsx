@@ -3,7 +3,6 @@ import React from 'react';
 const Privacy = () => {
   return (
     <div className="mt-20 mb-16 text-gray-700">
-      {/* Header Section */}
       <div className="text-center mb-10">
         <h1 className="text-3xl font-semibold text-[#10267e] mb-3">Privacy Policy</h1>
         <p className="text-gray-500 max-w-2xl mx-auto">
@@ -12,10 +11,8 @@ const Privacy = () => {
         </p>
       </div>
 
-      {/* Content Section */}
       <div className="space-y-10 max-w-4xl mx-auto leading-7">
 
-        {/* Section 1 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">1. Information We Collect</h2>
           <p>
@@ -26,7 +23,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 2 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">2. How We Use Your Information</h2>
           <p>
@@ -35,7 +31,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 3 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">3. Data Protection</h2>
           <p>
@@ -44,7 +39,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 4 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">4. Sharing of Information</h2>
           <p>
@@ -54,7 +48,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 5 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">5. Cookies</h2>
           <p>
@@ -63,7 +56,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 6 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">6. Your Rights</h2>
           <p>
@@ -72,7 +64,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 7 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">7. Changes to This Policy</h2>
           <p>
@@ -81,7 +72,6 @@ const Privacy = () => {
           </p>
         </section>
 
-        {/* Section 8 */}
         <section>
           <h2 className="text-2xl font-medium text-[#4A6CF7] mb-2">8. Contact Us</h2>
           <p>

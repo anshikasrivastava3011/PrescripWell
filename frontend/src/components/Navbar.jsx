@@ -16,7 +16,6 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-[#ADADAD]">
-      {/* Logo */}
       <img
         onClick={() => navigate('/')}
         className="w-44 cursor-pointer"
@@ -24,7 +23,6 @@ const Navbar = () => {
         alt="PrescripWell Logo"
       />
 
-      {/* Desktop Menu */}
       <ul className="md:flex items-start gap-6 font-medium hidden">
         <NavLink
           to="/"
@@ -59,7 +57,6 @@ const Navbar = () => {
         </NavLink>
       </ul>
 
-      {/* User / Login Section */}
       <div className="flex items-center gap-4">
         {token && userData ? (
           <div className="flex items-center gap-2 cursor-pointer group relative">
@@ -94,7 +91,6 @@ const Navbar = () => {
           </button>
         )}
 
-        {/* Mobile Menu Icon */}
         <img
           onClick={() => setShowMenu(true)}
           className="w-6 md:hidden cursor-pointer"
@@ -102,7 +98,6 @@ const Navbar = () => {
           alt="Menu"
         />
 
-        {/* Mobile Menu */}
         <div
           className={`md:hidden ${showMenu ? 'fixed w-full' : 'h-0 w-0'
             } right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all duration-300`}

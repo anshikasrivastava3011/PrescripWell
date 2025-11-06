@@ -29,7 +29,6 @@ const Doctors = () => {
       <p className='text-gray-600'>Browse through the doctors specialist.</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
         
-        {/* Filter Toggle (Mobile) */}
         <button 
           onClick={() => setShowFilter(!showFilter)} 
           className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`}
@@ -37,7 +36,6 @@ const Doctors = () => {
           Filters
         </button>
 
-        {/* Sidebar Filter */}
         <div className={`flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
           <p onClick={() => speciality === 'General physician' ? navigate('/doctors') : navigate('/doctors/General physician')} 
              className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded cursor-pointer transition-all ${speciality === 'General physician' ? 'bg-[#E2E5FF] text-black' : ''}`}>
@@ -65,7 +63,7 @@ const Doctors = () => {
           </p>
         </div>
 
-        {/* Doctors Grid */}
+
         <div className='w-full grid grid-cols-auto gap-4 gap-y-6'>
           {filterDoc.map((item, index) => (
             <div
@@ -73,7 +71,6 @@ const Doctors = () => {
               className='border border-[#C9D8FF] rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500'
               key={index}
             >
-              {/* ✅ Square image area (Perfectly filled) */}
               <div className="bg-[#EAEFFF] aspect-square overflow-hidden rounded-t-xl">
                 <img
                   src={item.image}
@@ -82,7 +79,6 @@ const Doctors = () => {
                 />
               </div>
 
-              {/* Doctor Info */}
               <div className='p-4'>
                 <div className={`flex items-center gap-2 text-sm text-center ${item.available ? 'text-green-500' : 'text-gray-500'}`}>
                   <p className={`w-2 h-2 rounded-full ${item.available ? 'bg-green-500' : 'bg-gray-500'}`}></p>
