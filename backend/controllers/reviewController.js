@@ -2,6 +2,7 @@
 import jwt from "jsonwebtoken";
 import Review from "../models/reviewModel.js";
 import Doctor from "../models/doctorModel.js";
+import Appointment from "../models/appointmentModel.js";
 
 // POST /api/reviews/add
 export const addReview = async (req, res) => {
@@ -37,7 +38,7 @@ export const addReview = async (req, res) => {
   }
 };
 
-// GET /api/reviews/:doctorId   (returns reviews + hasReviewed for current token)
+
 export const getDoctorReviews = async (req, res) => {
   try {
     const { doctorId } = req.params;

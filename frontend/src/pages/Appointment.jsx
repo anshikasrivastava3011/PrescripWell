@@ -28,6 +28,7 @@ const Appointment = () => {
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
   const [hasReviewed, setHasReviewed] = useState(false);
+  const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
 
   const navigate = useNavigate();
 
@@ -74,7 +75,7 @@ const Appointment = () => {
 
         const isSlotAvailable =
           docInfo.slots_booked[slotDate] &&
-          docInfo.slots_booked[slotDate].includes(stime)
+            docInfo.slots_booked[slotDate].includes(stime)
             ? false
             : true;
 
@@ -265,11 +266,10 @@ const Appointment = () => {
               <div
                 onClick={() => setSlotIndex(index)}
                 key={index}
-                className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${
-                  slotIndex === index
+                className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${slotIndex === index
                     ? "bg-primary text-white"
                     : "border border-[#DDDDDD]"
-                }`}
+                  }`}
               >
                 <p>{item[0] && daysOfWeek[item[0].datetime.getDay()]}</p>
                 <p>{item[0] && item[0].datetime.getDate()}</p>
@@ -283,11 +283,10 @@ const Appointment = () => {
               <p
                 onClick={() => setSlotTime(item.time)}
                 key={index}
-                className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer ${
-                  item.time === slotTime
+                className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer ${item.time === slotTime
                     ? "bg-primary text-white"
                     : "text-[#949494] border border-[#B4B4B4]"
-                }`}
+                  }`}
               >
                 {item.time.toLowerCase()}
               </p>
@@ -314,21 +313,21 @@ const Appointment = () => {
           </p>
         ) : (
           <div className="space-y-4">
-{reviews.map((rev, index) => (
-  <div key={index} className="bg-gray-50 p-4 rounded-lg shadow-sm">
-<div className="flex items-center justify-between mb-2">
-  <div className="flex items-center gap-2">
-    <p className="font-semibold text-gray-800">{rev.userId?.name || "Anonymous"}</p>
-    <p className="text-[#fbbf24]">⭐ {rev.rating}/5</p>
-  </div>
-  <p className="text-gray-500 text-sm">
-    {new Date(rev.createdAt).toLocaleDateString()}
-  </p>
-</div>
-<p className="text-gray-700">{rev.comment}</p>
+            {reviews.map((rev, index) => (
+              <div key={index} className="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <p className="font-semibold text-gray-800">{rev.userId?.name || "Anonymous"}</p>
+                    <p className="text-[#fbbf24]">⭐ {rev.rating}/5</p>
+                  </div>
+                  <p className="text-gray-500 text-sm">
+                    {new Date(rev.createdAt).toLocaleDateString()}
+                  </p>
+                </div>
+                <p className="text-gray-700">{rev.comment}</p>
 
-  </div>
-))}
+              </div>
+            ))}
 
           </div>
         )}
@@ -408,3 +407,5 @@ const Appointment = () => {
 };
 
 export default Appointment;
+
+
